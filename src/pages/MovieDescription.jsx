@@ -20,11 +20,13 @@ export const MovieDescription = () => {
   const imgDetails = `https://image.tmdb.org/t/p/w200/${movieDetail.poster_path}`;
   return (
     <section className={`${stylesMovieDescription.section}`}>
-      <div>
+      <div className={stylesMovieDescription.imgContainer}>
         {/* <span>{movieDetail.original_language}</span>  */}
         <img src={imgDetails} className={styles.movieImg} alt="img" />
         <div>
-          <p>{movieDetail.original_title}</p>
+          <p className={stylesMovieDescription.paragraphDescription}>
+            {movieDetail.original_title}
+          </p>
         </div>
       </div>
       <div className={`${stylesMovieDescription.description}`}>
