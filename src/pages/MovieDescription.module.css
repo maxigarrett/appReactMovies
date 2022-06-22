@@ -4,20 +4,6 @@
   justify-content: center;
   align-items: center;
 }
-.imgContainer {
-  margin-left: 100px;
-}
-.paragraphDescription {
-  text-align: center;
-  transform: translateX(-22%);
-}
-.description {
-  align-items: center;
-  width: 320px;
-  letter-spacing: 2px;
-  line-height: 20px;
-  text-align: center;
-}
 @media screen and (min-width: 760px) {
   .section {
     width: 70%;
@@ -29,14 +15,55 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .paragraphDescription {
-    transform: translateX(0);
+}
+.imgContainer {
+  margin-left: 110px;
+}
+@media screen and (min-width: 760px) {
+  .imgContainer {
+    width: 250px;
   }
+}
+
+@media screen and (min-width: 500px) {
+  .imgDescription {
+    margin-right: 100px;
+  }
+}
+
+.paragraphDescription {
+  text-align: center;
+  transform: translateX(-21%);
+}
+@media screen and (min-width: 376px) {
+  .paragraphDescription {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .paragraphDescription {
+    width: 250px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .paragraphDescription {
+    margin-left: 30px;
+  }
+}
+.description {
+  align-items: center;
+  width: 320px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 760px) {
   .description {
     overflow: auto;
-    min-width: 300px;
+    min-width: 250px;
     height: 350px;
     text-align: left;
-    padding-left: 2em;
+    /* padding-left: 2em; */
   }
 }

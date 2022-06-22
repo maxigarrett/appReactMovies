@@ -22,7 +22,11 @@ export const MovieDescription = () => {
     <section className={`${stylesMovieDescription.section}`}>
       <div className={stylesMovieDescription.imgContainer}>
         {/* <span>{movieDetail.original_language}</span>  */}
-        <img src={imgDetails} className={styles.movieImg} alt="img" />
+        <img
+          src={imgDetails}
+          className={`${styles.movieImg} ${stylesMovieDescription.imgDescription}`}
+          alt="img"
+        />
         <div>
           <p className={stylesMovieDescription.paragraphDescription}>
             {movieDetail.original_title}
